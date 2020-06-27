@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="instructions">
+      <h2>Instructions</h2>
+      <p>There are 3 levels</p>
+      <p>
+        Choose one of the level and click the start button to start the game
+      </p>
+      <p>There is a time limit of 15 seconds</p>
+      <p>Press the "Enter" button to get the next word</p>
+      <p>Each correctly typed answer will have a score of one.</p>
+      <p>The levels can be changed anytime within 15 seconds</p>
+    </div>
+    <div class="container">
+      <select name="options" id="option">
+        <option value="">--Choose the level--</option>
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="difficult">Difficult</option>
+      </select>
+      <div id="timer" class="hide">Time:<span class="time"></span></div>
+      <div id="score" class="hide">Score:<span class="score1"></span></div>
+      <div id="words" class="hide"></div>
+      <br />
+      <input id="answer" type="text" placeholder="type here" class="hide" />
+      <button id="start">Start</button>
+      <div id="result" class="hide"></div>
+    </div>
+    <script src="speed.js"></script>
+  </body>
+</html>
