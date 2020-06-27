@@ -10,22 +10,36 @@ const finalResult = document.querySelector("#result");
 
 let score = 0;
 
-const easyWordsList = ["drag", "queen", "night", "quick", "happy", "people"];
+const easyWordsList = [
+  "drag",
+  "queen",
+  "night",
+  "quick",
+  "happy",
+  "color",
+  "list",
+  "cat",
+  "poop",
+];
 const mediumWordsList = [
   "animal",
   "kindle",
   "character",
   "bamboo",
-  "sky",
+  "people",
   "convex",
+  "relation",
+  "contour",
 ];
 const difficultWordsList = [
   "carpediem",
-  "hacker",
+  "magnificent",
   "beautiful",
   "gorgeous",
-  "hardcore",
-  "vampire",
+  "herbivorous",
+  "vocabulary",
+  "horticulture",
+  "examination",
 ];
 
 const randomEasy = Math.floor(Math.random() * easyWordsList.length);
