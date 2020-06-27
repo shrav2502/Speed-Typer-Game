@@ -137,40 +137,40 @@ body {
   text-align: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 400px) {
   .instructions {
-    width: 150px;
+    width: 320px;
     font-size: 14px;
     margin-left: 0px;
     position: absolute;
-    margin-top: -50px;
+    margin-top: 50px;
   }
   .container {
-    width: 280px;
-    margin-left: 180px;
+    width: 380px;
+    margin-left: 380px;
     margin-top: 150px;
     position: relative;
   }
   #option {
-    margin-left: 50px;
+    margin-left: 100px;
   }
   #start {
-    margin-left: 70px;
+    margin-left: 120px;
   }
   #words {
-    margin-left: 40px;
+    margin-left: 90px;
   }
   #answer {
-    margin-left: 5px;
+    margin-left: 55px;
   }
   #timer,
   #score {
     font-size: 15px;
   }
   #score {
-    margin-left: 210px;
+    margin-left: 310px;
   }
   #result {
-    margin-left: -10px;
+    margin-left: 50px;
   }
 }
