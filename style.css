@@ -9,30 +9,33 @@
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
     0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
     0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+  position: relative;
 }
 
 #score {
   margin-left: 410px;
-  margin-top: -30px;
+  margin-top: 150px;
   font-size: 22px;
   font-family: monospace;
   color: CORNFLOWERBLUE;
   font-weight: 600;
+  position: absolute;
 }
 
 #timer {
-  margin-top: 40px;
+  margin-top: 150px;
   font-size: 22px;
   margin-left: 10px;
   font-family: monospace;
   color: CORNFLOWERBLUE;
   font-weight: 600;
+  position: absolute;
 }
 
 #words {
-  margin-left: 160px;
+  margin-left: 150px;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 210px;
   font-size: 33px;
   font-family: monospace;
   color: MIDNIGHTBLUE;
@@ -42,15 +45,17 @@
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
     0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
     0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+  position: absolute;
 }
 
 #answer {
-  margin-left: 130px;
+  margin-left: 120px;
   padding: 10px;
   width: 250px;
-  margin-top: 20px;
+  margin-top: 280px;
   border: 2px solid MIDNIGHTBLUE;
   border-radius: 5px;
+  position: absolute;
 }
 
 #option {
@@ -64,6 +69,7 @@
     0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
     0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
   border-radius: 5px;
+  position: absolute;
 }
 
 .hide {
@@ -83,6 +89,7 @@
     0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
     0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
   border-radius: 5px;
+  position: absolute;
 }
 
 #result {
@@ -100,6 +107,7 @@
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
     0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
     0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+  position: absolute;
 }
 body {
   background-color: MINTCREAM;
@@ -107,6 +115,7 @@ body {
 .time,
 .score1 {
   color: DARKCYAN;
+  position: absolute;
 }
 
 .instructions {
@@ -119,14 +128,40 @@ body {
   border-radius: 5px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  position: relative;
 }
 
 .heading {
   text-align: center;
 }
 
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+@media screen and (max-width: 800px) {
+  .instructions {
+    width: 250px;
+
+    font-size: 14px;
+  }
+  .container {
+    width: 280px;
+    margin-left: 340px;
+  }
+  #option {
+    margin-left: 50px;
+  }
+  #start {
+    margin-left: 70px;
+  }
+  #words {
+    margin-left: 40px;
+  }
+  #answer {
+    margin-left: 5px;
+  }
+  #timer,
+  #score {
+    font-size: 15px;
+  }
+  #score {
+    margin-left: 210px;
+  }
 }
