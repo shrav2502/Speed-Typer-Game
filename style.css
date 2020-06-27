@@ -124,3 +124,9 @@ body {
 .heading {
   text-align: center;
 }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
